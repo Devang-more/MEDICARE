@@ -1,8 +1,7 @@
 import "./App.css";
 import Topbar from "./components/Topbar";
 import LogInPage from "./components/LogInPage";
-// gdhjb
-//Vijeta Singh Yadav
+
 function App() {
   return (
     <div className="app">
