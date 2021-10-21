@@ -1,0 +1,70 @@
+.logInPage::before {
+  content: "";
+  background: url("https://cdn.pixabay.com/photo/2019/06/17/17/57/stethoscope-4280497_960_720.jpg")
+    no-repeat center center/cover;
+  position: absolute;
+  height: 803px;
+  top: -100px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.logInPage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logInPageForm {
+  margin-top: 6%;
+  width: 40vw;
+  background-color: rgba(0, 0, 0, 0.356);
+  height: 50vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.formInput input {
+  width: 350px;
+  font-size: 18px;
+  padding: 15px;
+  margin: 10px;
+  outline: none;
+}
+
+.loginPage__heading {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.siginButton {
+  width: 350px !important;
+  background-color: #02b6cb !important;
+  margin: 10px !important;
+  color: white !important;
+  padding: 10px !important;
+  font-size: 18px !important;
+  text-transform: inherit !important;
+  font-weight: 700 !important;
+}
+
+.formPara {
+  text-align: center;
+  color: white;
+}
+
+.formPara a {
+  color: #02b6cb;
+  text-decoration: none;
+}
+
+.formPara a:hover {
+  color: #02b7cbab;
+}

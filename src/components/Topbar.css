@@ -1,0 +1,51 @@
+.Medi {
+  color: rgba(255, 0, 0, 0.925);
+}
+.Care {
+  color: rgba(0, 128, 0, 0.842);
+}
+
+.logo {
+  font-size: 3rem !important;
+  margin-right: 15px;
+  color: green;
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.topbar__left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__right {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar__rightLogin {
+  border: 1px solid rgba(91, 91, 233, 0.747) !important;
+  background-color: rgba(197, 230, 241, 0.329) !important;
+  margin-right: 10px !important;
+  text-transform: inherit !important;
+  color: hsla(205, 35%, 60%, 1) !important;
+}
+
+.topbar__rightSignup {
+  background-color: hsla(206, 100%, 52%, 1) !important;
+  color: #f5f5f5 !important;
+  text-transform: inherit !important;
+  border: 1px solid blue !important;
+}
+
+.topbar__rightSignup:hover {
+  background-color: rgb(70, 189, 236) !important;
+}
+.topbar__rightLogin:hover {
+  background-color: hsla(205, 46%, 92%, 1) !important;
+}
