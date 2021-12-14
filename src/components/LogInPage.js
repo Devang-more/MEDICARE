@@ -16,7 +16,7 @@ function SignInPage() {
           </div>
           <Button className="siginButton">Sign in</Button>
           <p className="formPara">
-            Already a member? <a href="/signup">Sign up</a>
+            Not a member? <a href="/Signup_P">Sign in</a>
           </p>
         </form>
       </div>

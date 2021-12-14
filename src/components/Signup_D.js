@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from "@mui/material";
 import './Signup_D.css';
-const Signup_D=()=>{
+function Signup_D() {
     return (
         <div className="SignupPage">
             <div className="SignupForm">
@@ -28,7 +28,13 @@ const Signup_D=()=>{
             <div className="formInput">
                 <input  placeholder="Location"></input>
             </div>
-            <Button className="signinButton">Sign in</Button>
+            <Button className="signinButton">Sign up</Button>
+            <p className="formPara">
+            Sign up for Patient? <a href="/Signup_P">Click here</a>
+          </p>
+            <p className="formPara">
+            Already a member? <a href="/loginpage">Sign in</a>
+          </p>
             
         </form>
         </div>
