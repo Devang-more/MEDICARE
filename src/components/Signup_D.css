@@ -1,0 +1,55 @@
+.SignupPage::before {
+    content: "";
+    background: url("https://cdn.pixabay.com/photo/2019/06/17/17/57/stethoscope-4280497_960_720.jpg")
+      no-repeat center center/cover;
+    position: absolute;
+    height: 803px;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  .SignupPage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .SignupForm {
+    margin-top: -1%;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.527);
+    height: 95vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .formInput input {
+    width: 400px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 8px;
+    border-radius: 10px;
+    outline: none;
+  }
+  .signinButton {
+    width: 400px !important;
+    background-color: #02b6cb !important;
+    margin: 10px !important;
+    color: white !important;
+    padding: 10px !important;
+    font-size: 18px !important;
+    text-transform: inherit !important;
+    font-weight: 700 !important;
+  }
+  .heading{
+    margin-bottom: 2px;
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:greenyellow;
+  }

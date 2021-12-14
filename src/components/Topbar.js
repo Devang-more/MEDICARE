@@ -1,10 +1,12 @@
 import { AddModerator } from "@mui/icons-material";
-import { Button } from "@mui/material";
+
 import React from "react";
 import "./Topbar.css";
 
 function Topbar() {
   return (
+   
+        
     <div className="topbar">
       <div className="topbar__left">
         <AddModerator className="logo" />
@@ -18,6 +20,7 @@ function Topbar() {
         <Button className="topbar__rightSignup">Sign up</Button>
       </div> */}
     </div>
+    
   );
 }
 

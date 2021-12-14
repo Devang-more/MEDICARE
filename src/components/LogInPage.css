@@ -66,5 +66,11 @@
 }
 
 .formPara a:hover {
-  color: #02b7cbab;
+  color: #0992eeab;
 }
+
+.formInput:hover{
+  background-color:grey; 
+}
+
+    
