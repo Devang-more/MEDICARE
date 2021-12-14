@@ -3,6 +3,7 @@ import Topbar from "./components/Topbar";
 import LogInPage from "./components/LogInPage";
 import Signup_P from "./components/Signup_P";
 import Signup_D from './components/Signup_D';
+import Footer from './components/footer';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         </Switch>
         
       </Router>
+      <Footer />
     </div>
   );
 }
