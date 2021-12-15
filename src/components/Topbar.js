@@ -19,6 +19,8 @@ function Topbar() {
   <div class="bg-light border"><Link to="/">Home</Link></div>
   <div class="bg-light border"><Link to="/loginpage">Log in</Link></div>
   <div class="bg-light border"><Link to="/Signup_P">Sign up</Link></div>
+  <div class="bg-light border"><Link to="/doctors">Doctors</Link></div>
+
 </div>
       {/* <div className="topbar__right">
       <a href="/" class="link-danger">Home</a>

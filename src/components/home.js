@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import React from "react";
-import "./Home.css";
-import form from "./appointmentform.js"
+import "./../style/Home.css";
+// import form from "./appointmentform.js"
 function Home() {
   return (
     <div className="homePage">
@@ -20,8 +20,8 @@ function Home() {
         </form>
       </div>
       <div className="options1">
-            <div className="doctors">
-                <Link to="/">
+            <div className="doctorsnearyou">
+                <Link to="/doctors">
                 <h2 className="h2heading">Doctors Near By</h2>
                 <h4>Find the best doctors near your location</h4>
                 </Link>
