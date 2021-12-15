@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import React from "react";
-import "./LogInPage.css";
+import "./../style/LogInPage.css";
 
-function SignInPage() {
+function LogInPage() {
   return (
     <div className="logInPage">
       <div className="logInPageForm">
@@ -24,4 +24,4 @@ function SignInPage() {
   );
 }
 
-export default SignInPage;
+export default LogInPage;

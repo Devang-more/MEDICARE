@@ -1,6 +1,6 @@
 // import { FormatQuoteRounded } from "@mui/icons-material";
 import React from "react";
-import './footer.css';
+import './../style/footer.css';
 
 function Footer() {
     return(

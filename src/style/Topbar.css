@@ -1,0 +1,43 @@
+.Medi {
+  color: rgba(255, 0, 0, 0.925);
+}
+.Care {
+  color: rgba(0, 128, 0, 0.842);
+}
+
+.logo {
+  font-size: 3rem !important;
+  margin-right: 15px;
+  color: green;
+}
+
+.topbar {
+  display: flex;
+  background-color: #121619;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.topbar__left {
+  display: flex;
+  justify-content: center;
+}
+.topbar__right {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    /* display: none; */
+  /* margin-right: 40px; */
+  /* display: flex; */
+  color: rgb(255, 255, 255);
+}
+
+.hstack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}

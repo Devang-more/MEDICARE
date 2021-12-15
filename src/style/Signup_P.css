@@ -15,18 +15,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   .SignupForm {
-    margin-top: -1%;
+    margin-top: 0%;
     width: 40vw;
     background-color: rgba(0, 0, 0, 0.527);
-    height: 85vh;
+    height: 80vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    /* margin-bottom: 3%; */
   }
   .formInput input {
     width: 400px;

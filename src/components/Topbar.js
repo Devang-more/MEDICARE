@@ -1,7 +1,7 @@
 import { AddModerator } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Topbar.css";
+import "./../style/Topbar.css";
 
 function Topbar() {
   return (
@@ -15,7 +15,13 @@ function Topbar() {
                 <span className="Care">Care</span>
               </h1>
             </div>
-      <div className="topbar__right">
+            <div class="hstack gap-6">
+  <div class="bg-light border"><Link to="/">Home</Link></div>
+  <div class="bg-light border"><Link to="/loginpage">Log in</Link></div>
+  <div class="bg-light border"><Link to="/Signup_P">Sign up</Link></div>
+</div>
+      {/* <div className="topbar__right">
+      <a href="/" class="link-danger">Home</a>
       <Link to="/">Home</Link>
       </div>
       <div className="topbar__right">
@@ -23,7 +29,7 @@ function Topbar() {
       </div>
       <div className="topbar__right">
       <Link to="/Signup_P">Sign up</Link>
-      </div>
+      </div> */}
     </div>
     
   );
