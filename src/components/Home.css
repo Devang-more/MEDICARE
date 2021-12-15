@@ -1,0 +1,127 @@
+.homePage{
+    /* background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technology-technology-health-doctors-image_10060.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.doctors{
+    padding: 20px;
+    height: 300px;
+    align-items: bottom ;
+    background-image: url("https://media.mercola.com/ImageServer/Public/2020/April/FB/hospitals-preventing-doctors-from-wearing-masks-fb.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 45%;
+    justify-content: bottom ;
+    margin-right: 30px;
+}
+.appointment{
+    padding: 20px;
+    height: 300px;
+    align-items: center;
+    /* background-color: yellow; */background-image: url("https://i.huffpost.com/gen/2614012/images/o-DOCTOR-COMPUTER-facebook.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    width: 45%;
+}
+.video{
+    padding: 20px;
+    height: 300px;
+    align-items: center;
+    /* background-color: black; */background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technology-technology-health-doctors-image_10060.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    width: 45%;
+    margin-right: 30px;
+}
+.speciality{
+    padding: 20px;
+    height: 300px;
+    align-items: center;
+    /* background-color: yellow; */background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technology-technology-health-doctors-image_10060.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;width: 45%;
+}
+.reports{
+    padding: 20px;
+    height: 300px;
+    align-items: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technology-technology-health-doctors-image_10060.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 45%;
+    margin-right: 30px;
+}
+.Pappointments{
+    padding: 20px;
+    height: 300px;
+    align-items: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technology-technology-health-doctors-image_10060.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    width: 45%;
+}
+.homePageForm {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-technology-technology-health-doctors-image_10060.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 50vh;
+    /* border-radius: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.homeformInput input {
+    width: 250px;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px;
+    outline: none;
+    /* background-color: rgb(124, 219, 226); */
+  }
+  .searchButton {
+    width: 100px !important;
+    background-color: #d4be42 !important;
+    margin: 10px !important;
+    color: white !important;
+    padding: 10px !important;
+    font-size: 18px !important;
+    text-transform: inherit !important;
+    font-weight: 700 !important;
+    justify-content: center!important;
+  }
+
+  .h2heading {
+      padding-top: 33%;
+    color: rgb(160, 33, 33);
+    padding-bottom: 0.5%;
+  }
+  .options1{
+      display: flex;
+      padding: 2%;
+      margin-left: 2%;
+      
+  }
+  .options2{
+    display: flex;
+    padding: 2%;
+    margin-left: 2%;
+}
+.options3{
+    display: flex;
+    padding: 2%;
+    margin-left: 2%;
+}
