@@ -1,0 +1,16 @@
+.main_footer{
+    display:flex;
+    
+    
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding-left: 30px;
+    padding-right: 50px;
+}
+.row_footer{
+    display:flex;
+    
+}
+.col2{
+    padding-left: 40px;
+}
