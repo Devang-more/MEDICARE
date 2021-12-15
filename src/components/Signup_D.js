@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from "@mui/material";
-import './Signup_D.css';
+import './../style/Signup_D.css';
 function Signup_D() {
     return (
         <div className="SignupPage">

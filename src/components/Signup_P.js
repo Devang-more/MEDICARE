@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from "@mui/material";
-import './Signup_P.css';
+import './../style/Signup_P.css';
 function Signup_P() {
     return (
         <div className="SignupPage">
@@ -27,7 +27,7 @@ function Signup_P() {
             </div>
             <Button className="signinButton">Sign up</Button>
             <p className="formPara">
-            Sign up for Doctor? <a href="/">Click here</a>
+            Sign up for Doctor? <a href="/Signup_D">Click here</a>
           </p>
             <p className="formPara">
             Already a member? <a href="/loginpage">Sign in</a>

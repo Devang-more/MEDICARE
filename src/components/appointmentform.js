@@ -1,5 +1,5 @@
 import React from 'react'
-import "./appointmentform.css"
+import "./../style/appointmentform.css"
 function Form(){
     return(
         <section>
