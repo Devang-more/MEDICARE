@@ -35,7 +35,7 @@ function Home() {
       </div>
       <div className="options2">
             <div className="video">
-                <Link to="/">
+                <Link to="/VideoConsult">
                 <h2 className="h2heading">Video/Audio Consult</h2>
                 <h4>Direct consult the doctor online through Audio/Video comms</h4>
                     </Link>
