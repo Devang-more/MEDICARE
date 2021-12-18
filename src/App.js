@@ -8,6 +8,7 @@ import Footer from './components/footer';
 import Doctors from "./components/Doctors";
 import Home from "./components/home";
 import Form from "./components/appointmentform";
+import Selection from "./components/doctorselection"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
@@ -25,14 +26,12 @@ function App() {
 
           {/* <Route path="/Appointment" exact component={Appointment} /> */}
           <Route path="/" exact component={Home} />
+          <Route path="/doctorselection" exact component={Selection} />
           <Route path="/appointmentform" exact component={Form}  />
         </Switch> }
-        <Footer />
+       
       </Router>
-<<<<<<< HEAD
-=======
       <Footer/>
->>>>>>> 850eb201286f19505fc7318dbff0d56eef491e8e
     </div>
   );
 }

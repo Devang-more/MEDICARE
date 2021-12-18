@@ -2,11 +2,6 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import React from "react";
 import "./../style/Home.css";
-<<<<<<< HEAD
-// import form from "./appointmentform.js"
-=======
-
->>>>>>> 850eb201286f19505fc7318dbff0d56eef491e8e
 function Home() {
   return (
     <div className="homePage">
@@ -31,7 +26,7 @@ function Home() {
                 </Link>
             </div>
             <div className="appointment">
-                <Link to="/appointmentform">
+                <Link to="/doctorselection">
                 <h2 className="h2heading">Book Appointments</h2>
                 <h4>Book an appointment for the doctors according to availability(online/offline)</h4>  
                 </Link>
