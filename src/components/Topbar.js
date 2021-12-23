@@ -15,11 +15,11 @@ function Topbar() {
                 <span className="Care">Care</span>
               </h1>
             </div>
-            <div class="hstack gap-6">
-  <div class="bg-light border"><Link to="/">Home</Link></div>
-  <div class="bg-light border"><Link to="/loginpage">Log in</Link></div>
-  <div class="bg-light border"><Link to="/Signup_P">Sign up</Link></div>
-  <div class="bg-light border"><Link to="/doctors">Doctors</Link></div>
+            <div classname="hstack gap-6">
+  <div classname="bg-light border"><Link to="/">Home</Link></div>
+  <div classname="bg-light border"><Link to="/loginpage">Log in</Link></div>
+  <div classname="bg-light border"><Link to="/Signup_P">Sign up</Link></div>
+  <div classname="bg-light border"><Link to="/name">Doctors</Link></div>
 
 </div>
       {/* <div className="topbar__right">

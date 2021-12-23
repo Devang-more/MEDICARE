@@ -2,11 +2,6 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import React from "react";
 import "./../style/Home.css";
-<<<<<<< HEAD
-// import form from "./appointmentform.js"
-=======
-
->>>>>>> 850eb201286f19505fc7318dbff0d56eef491e8e
 function Home() {
   return (
     <div className="homePage">
