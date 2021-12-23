@@ -26,7 +26,7 @@ function Home() {
                 </Link>
             </div>
             <div className="appointment">
-                <Link to="/appointmentform">
+                <Link to="/doctorselection">
                 <h2 className="h2heading">Book Appointments</h2>
                 <h4>Book an appointment for the doctors according to availability(online/offline)</h4>  
                 </Link>
