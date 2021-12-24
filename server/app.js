@@ -12,13 +12,8 @@ app.use(require('./router/auth'))
 
 const PORT = process.env.PORT;
 
-// app.get('/', (req,res) => {
-//     res.send("helllo world")
-// });
-app.get('/Signup_D', (req,res) => {
-    res.send("helllo world")
-});
-app.get('/Signup_P', (req,res) => {
+app.get('/contact', (req,res) => {
+    res.cookie("test", 'devang')
     res.send("helllo world")
 });
 app.get('/loginpage', (req,res) => {

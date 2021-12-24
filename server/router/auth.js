@@ -1,6 +1,7 @@
 const express= require('express');
 const router = express.Router();
-
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 require('../db/conn');
 const User = require("../model/userSchema")
 const Patient = require("../model/patientschema")
@@ -26,7 +27,7 @@ router.post('/Signup_D', async (req,res) => {
         }else{
         const user = new User({fname, lname, dob, email, speciality, password, location})
 
-        await user.save();
+         await user.save();
 
         res.status(201).json({message : "user registered successfully"})
         }
@@ -40,6 +41,7 @@ router.post('/Signup_D', async (req,res) => {
 
 router.post('/loginpage', async (req,res) => {
     try{
+        let token;
         const {email, password } = req.body;
 
         if(!email || !password ){
@@ -48,12 +50,24 @@ router.post('/loginpage', async (req,res) => {
         
         const userLogin = await User.findOne({email: email })
 
-        console.log(userLogin);
+        if(userLogin){
+            const isMatch = await bcrypt.compare(password, userLogin.password);
 
-        if(!userLogin){
-            res.status(400).json({error: "user err"})
+            token = await userLogin.generateAuthToken();
+            console.log(token);
+
+            res.cookie("jwtoken", token,{
+                expires:new Date(Date.now() + 25892000000),
+                httpOnly:true
+            });
+
+            if(!isMatch){
+                res.status(400).json({error: "user err"})
+            }else{
+                res.json({message: "user login success"})
+            }
         }else{
-            res.json({message: "user login success"})
+            res.status(400).json({error: "user err"})
         }
 
         }catch(err) {
