@@ -103,29 +103,6 @@ router.post('/Signup_P', async (req,res) => {
             console.log(err);
         }
 });
-//route for login
-router.post('/loginpage', async (req,res) => {
-    try{
-        const {email, password } = req.body;
-
-        if(!email || !password ){
-            return res.status(400).json({error: "pls fill data properly"});
-        }
-        
-        const userLogin = await Patient.findOne({email: email })
-
-        console.log(userLogin);
-
-        if(!userLogin){
-            res.status(400).json({error: "user err"})
-        }else{
-            res.json({message: "user login success"})
-        }
-
-        }catch(err) {
-            console.log(err);
-        }
-});
 
 
 module.exports = router;

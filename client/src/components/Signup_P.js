@@ -68,7 +68,7 @@ function Signup_P() {
             <div className="formInput">
                 <input type='text' name='location' value={user.location}  onChange={handleinputs} placeholder="Location"></input>
             </div>
-            <Button className="signinButton" onclick={PostData}>Sign up</Button>
+            <Button className="signinButton" onClick={PostData}>Sign up</Button>
             <p className="formPara">
             Sign up for Doctor? <a href="/Signup_D">Click here</a>
           </p>
