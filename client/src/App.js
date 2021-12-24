@@ -29,15 +29,9 @@ function App() {
           <Route path="/doctorselection" exact component={Selection} />
           <Route path="/appointmentform" exact component={Form}  />
         </Switch> }
-<<<<<<< HEAD
-        
-      </Router>
-      <Footer />
-=======
        
       </Router>
       <Footer/>
->>>>>>> 137939cec4e3ad8ae5d39fa891941ae2b8993f2c
     </div>
   );
 }
