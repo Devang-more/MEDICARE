@@ -38,10 +38,10 @@ function Form(){
             window.alert("invalid form data");
             console.log("invalid form data");
         } else{
-            window.alert(" successfully recieved an appointment form");
-            console.log(" successfully recieved an appointment form");
+            window.alert("successfully recieved an appointment form");
+            console.log("successfully recieved an appointment form");
         }
-        history.push("/home")
+        history.push("/")
     }
     
     return(
@@ -52,7 +52,7 @@ function Form(){
                     <div className='formdata'>
                         <form className='appointmentform'>
                             <div className='forminput' id='username'>
-                                <label htmlFor='email'>
+                                <label >
                                 <i class="zmdi zmdi-account material-icons-email"></i>
                                 </label>
                                 <input type="text"  value={user.email}  onChange={handleinputs} name="email" autocomplete="off" placeholder="email"></input>  

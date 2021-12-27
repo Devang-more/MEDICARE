@@ -37,44 +37,6 @@ router.post('/Signup_D', async (req,res) => {
         }
 });
 
-//login route
-
-router.post('/loginpage', async (req,res) => {
-    try{
-        let token;
-        const {email, password } = req.body;
-
-        if(!email || !password ){
-            return res.status(400).json({error: "pls fill data properly"});
-        }
-        
-        const userLogin = await User.findOne({email: email })
-
-        if(userLogin){
-            const isMatch = await bcrypt.compare(password, userLogin.password);
-
-            token = await userLogin.generateAuthToken();
-            console.log(token);
-
-            res.cookie("jwtoken", token,{
-                expires:new Date(Date.now() + 25892000000),
-                httpOnly:true
-            });
-
-            if(!isMatch){
-                res.status(400).json({error: "user err"})
-            }else{
-                res.json({message: "user login success"})
-            }
-        }else{
-            res.status(400).json({error: "user err"})
-        }
-
-        }catch(err) {
-            console.log(err);
-        }
-});
-
 //route for patient
 
 router.post('/Signup_P', async (req,res) => {

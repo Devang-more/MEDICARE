@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import {useState} from "react";
-import {NavLink,useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import React from "react";
 import "./../style/LogInPage.css";
 
@@ -14,9 +14,9 @@ function LogInPage() {
 
   const loginUser=async(e)=>{
     e.preventDefault();
-    const res=await fetch('/',{
-      method:"POST",
-      headers={
+    const res=await fetch('/loginpage', {
+      method: "POST",
+      headers:{
         "Content-Type": "application/json"
       },body:JSON.stringify({
         email,
@@ -24,11 +24,11 @@ function LogInPage() {
       })
     });
     const data=res.json();
-    if(res.status==400 || !data){
+    if(res.status===400 || !data){
       window.alert("Invalid Credentials");
     }else{
       window.alert("login Successfully")
-      history.push("/home");
+      history.push("/");
     }
   }  
   
@@ -44,7 +44,7 @@ function LogInPage() {
             <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Email" />
           </div>
           <div className="formInput">
-            <input type="password" id="password" value={Password} onChange={(e)=>setPassword(e.target.value)} placeholder="Password" />
+            <input type="password" id="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Password" />
           </div>
           <Button className="siginButton" onClick={loginUser} >Sign in</Button>
           <p className="formPara">
