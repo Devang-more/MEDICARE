@@ -1,39 +1,39 @@
-import Pepperoni from "../assets/pepperoni.jpg";
-import Margherita from "../assets/margherita.jpg";
-import PedroTechSpecial from "../assets/pedrotechspecial.jpg";
-import Vegan from "../assets/vegan.jpg";
-import Pineapple from "../assets/pineapple.jpg";
-import Expensive from "../assets/expensive.jpg";
+import Dr_Amitabh_goel from "../assets/Dr_Amitabh_goel.jpg";
+import dr_bipin_walia from "../assets/dr_bipin_walia.jpg";
+import Dr_Rajiv_Agarwal from "../assets/Dr_Rajiv_Agarwal.jpg";
+import Dr_Alka_Bhasin from "../assets/Dr_Alka_Bhasin.jpg";
+import Dr_Manoj_Kumar from "../assets/Dr_Manoj_Kumar.jpg";
+import Dr_Manoj_Singhal from "../assets/Dr_Manoj_Singhal.jpg";
 
 export const DoctorsList = [
   {
-    name: "nice",
-    image: Pepperoni,
+    name: "Dr Amitabh goel",
+    image: Dr_Amitabh_goel,
     speciality: "Psychiatrist" ,
   },
   {
-    name: "good",
-    image: Margherita,
+    name: "Dr Bipin walia",
+    image: dr_bipin_walia,
     speciality: "Podiatrist",
   },
   {
-    name: "ohh",
-    image: PedroTechSpecial,
+    name: "Dr Rajiv Agarwal",
+    image: Dr_Rajiv_Agarwal,
     speciality: "Optometrist",
   },
   {
-    name: "okk",
-    image: Vegan,
+    name: "Dr Alka Bhasin",
+    image: Dr_Alka_Bhasin,
     speciality: "Cardiologist",
   },
   {
-    name: "hmmmmm",
-    image: Pineapple,
+    name: "Dr Manoj Kumar",
+    image: Dr_Manoj_Kumar,
     speciality: "Obstetrician" ,
   },
   {
-    name: "jnl",
-    image: Expensive,
+    name: "Dr Manoj Singhal",
+    image: Dr_Manoj_Singhal,
     speciality: "Pediatrician" ,
   },
 ];
