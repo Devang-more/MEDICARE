@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 require('../db/conn');
 const User = require("../model/userSchema")
 const Patient = require("../model/patientschema")
-
+const appointmentform=require("../model/appointmentschema")
 router.get('/', (req,res) => {
     res.send("helllo world from router")
 });
@@ -65,29 +65,30 @@ router.post('/Signup_P', async (req,res) => {
             console.log(err);
         }
 });
-//route for login
-router.post('/loginpage', async (req,res) => {
+
+//route for appointment form
+router.post('/appointmentform', async (req,res) => {
     try{
-        const {email, password } = req.body;
+        const {email, password, date, time, speciality, mobileno } = req.body;
 
-        if(!email || !password ){
-            return res.status(400).json({error: "pls fill data properly"});
-        }
-        
-        const userLogin = await Patient.findOne({email: email })
+        if(!email || !password || !date || !time || !speciality || !mobileno){
+        return res.status(422).json({error: "pls fill form properly"});
+    }
+        const userExist = await appointmentform.findOne({email: email });
 
-        console.log(userLogin);
-
-        if(!userLogin){
-            res.status(400).json({error: "user err"})
+        if(!userExist){
+            return res.status(422).json({error: "given email is not exist"});
         }else{
-            res.json({message: "user login success"})
+        const user = new appointmentform({email, password, date, time, speciality, mobileno})
+
+        await user.save();
+
+        res.status(201).json({message : "successfully recieved an appointment form"})
         }
 
         }catch(err) {
             console.log(err);
         }
 });
-
 
 module.exports = router;
