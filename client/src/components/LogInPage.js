@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import {useState} from "react";
-import {NavLink,useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import React from "react";
 import "./../style/LogInPage.css";
 
@@ -24,11 +24,11 @@ function LogInPage() {
       })
     });
     const data=res.json();
-    if(res.status==400 || !data){
+    if(res.status===400 || !data){
       window.alert("Invalid Credentials");
     }else{
       window.alert("login Successfully")
-      history.push("/home");
+      history.push("/");
     }
   }  
   
