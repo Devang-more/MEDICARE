@@ -15,7 +15,7 @@ function LogInPage() {
   const loginUser=async(e)=>{
     e.preventDefault();
     const res=await fetch('/',{
-      method="POST",
+      method:"POST",
       headers={
         "Content-Type": "application/json"
       },body:JSON.stringify({
@@ -46,7 +46,7 @@ function LogInPage() {
           <div className="formInput">
             <input type="password" id="password" value={Password} onChange={(e)=>setPassword(e.target.value)} placeholder="Password" />
           </div>
-          <Button className="siginButton" onCClick={loginUser} >Sign in</Button>
+          <Button className="siginButton" onClick={loginUser} >Sign in</Button>
           <p className="formPara">
             Not a member? <a href="/Signup_P">Sign up</a>
           </p>
