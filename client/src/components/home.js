@@ -10,8 +10,6 @@ function Home() {
         <form>
           <div className="homeformInput">
             <input type="Location" id="location" placeholder="Enter Location" />
-          {/* </div>
-          <div className="formInput"> */}
             <input type="text" id="text" placeholder="Enter doctor or speciality" />
           
           <Button className="searchButton">Search</Button>

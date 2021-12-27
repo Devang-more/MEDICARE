@@ -20,7 +20,7 @@
 }
 .topbar__left {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 .topbar__right {
     flex: 50%;
