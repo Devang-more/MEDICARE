@@ -10,7 +10,7 @@ function Signup_D() {
         fname:"",lname:"",dob:"",email:"",speciality:"",password:"",location:""
     });
     let name, value;
-
+                                    {/* connecting backened and database with frontend*/}
     const handleinputs= (e) =>{
         console.log(e);
         name=e.target.name;
@@ -46,7 +46,7 @@ function Signup_D() {
     }
 
     return (
-        <div className="SignupPage">
+        <div className="SignupPage">            {/*signup page form for doctor*/}
             <div className="SignupForm">
                 <h2 className="heading"> Sign up Page for Doctor </h2>
         <form method='POST'>

@@ -11,7 +11,7 @@ function LogInPage() {
   const history=useHistory();
   const[email,setEmail]=useState('');
   const[password,setPassword]=useState('');
-
+                                          {/* connecting backened and database with frontend*/}
   const loginUser=async(e)=>{
     e.preventDefault();
     const res=await fetch('/loginpage', {
@@ -38,7 +38,7 @@ function LogInPage() {
   return (
     <div className="logInPage">
       <div className="logInPageForm">
-        <h2 className="loginPage__heading">Welcome to MediCare</h2>
+        <h2 className="loginPage__heading">Welcome to MediCare</h2>   {/*login page form with email and password as input*/}
         <form method="POST">
           <div className="formInput">
             <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Email" />

@@ -10,7 +10,7 @@ function Signup_P() {
         fname:"",lname:"",dob:"",email:"",password:"",location:""
     });
     let name, value;
-
+                                                {/* connecting backened and database with frontend*/}
     const handleinputs= (e) =>{
         console.log(e);
         name=e.target.name;
@@ -47,7 +47,7 @@ function Signup_P() {
     
     return (
         <div className="SignupPage">
-            <div className="SignupForm">
+            <div className="SignupForm">            {/*signup page form for patient*/}
                 <h2 className="heading"> Sign up Page for Patient  </h2>
         <form method='POST'>
            <div className="formInput">

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+                    {/*Appointment schema input*/}
 const appointmentschema = new mongoose.Schema({
     email:{
         type : String,

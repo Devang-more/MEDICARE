@@ -9,7 +9,7 @@ function Selection(){
             <div >
                 <form className='doctorselection'>
                                 <div className='doctorselectioninput' id='location' >    
-                                    <i class="zmdi zmdi-pin material-icons-username"></i>                                
+                                    <i class="zmdi zmdi-pin material-icons-username"></i>        {/* selection of location and speciality for the appointment form*/}
                                     <input type="text" name="Location" autocomplete="off" placeholder="Location"></input>  
                                 </div>
                                 <div className='doctorselectioninput' id='speciality'>

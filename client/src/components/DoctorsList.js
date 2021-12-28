@@ -4,13 +4,13 @@ import Dr_Rajiv_Agarwal from "../assets/Dr_Rajiv_Agarwal.jpg";
 import Dr_Alka_Bhasin from "../assets/Dr_Alka_Bhasin.jpg";
 import Dr_Manoj_Kumar from "../assets/Dr_Manoj_Kumar.jpg";
 import Dr_Manoj_Singhal from "../assets/Dr_Manoj_Singhal.jpg";
-
+                                                     {/*list of nearby doctors */}
 export const DoctorsList = [
   {
-    name: "Dr Amitabh goel",
+    name: "Dr Amitabh goel",      
     image: Dr_Amitabh_goel,
     speciality: "Psychiatrist" ,
-  },
+  },                                           
   {
     name: "Dr Bipin walia",
     image: dr_bipin_walia,

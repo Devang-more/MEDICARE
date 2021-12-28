@@ -9,7 +9,7 @@ function Topbar() {
         
     <div className="topbar">
             <div className="topbar__left">
-              <AddModerator className="logo" />
+              <AddModerator className="logo" />       {/*topbar of every page*/}
               <h1>
                 <span className="Medi">Medi</span>
                 <span className="Care">Care</span>
@@ -22,17 +22,7 @@ function Topbar() {
   <div classname="bg-light border"><Link to="/doctors">Doctors</Link></div>
 
 </div>
-      {/* <div className="topbar__right">
-      <a href="/" class="link-danger">Home</a>
-      <Link to="/">Home</Link>
-      </div>
-      <div className="topbar__right">
-      <Link to="/loginpage">Log in</Link>
-      </div>
-      <div className="topbar__right">
-      <Link to="/Signup_P">Sign up</Link>
-      </div> */}
-    </div>
+</div>
     
   );
 }

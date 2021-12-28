@@ -14,7 +14,7 @@ function Form(){
         console.log(e);
         name=e.target.name;
         value=e.target.value;
-
+                                                    {/*connecting backened and database*/}
         setUser({...user, [name]:value});
     }
 
@@ -50,7 +50,7 @@ function Form(){
                 <div id='formheading'>
                     <h2>APPOINTMENT FORM</h2>
                     <div className='formdata'>
-                        <form className='appointmentform'>
+                        <form className='appointmentform'>              {/* appointment form input  */}
                             <div className='forminput' id='username'>
                                 <label >
                                 <i class="zmdi zmdi-account material-icons-email"></i>

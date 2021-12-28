@@ -9,7 +9,7 @@ function Doctors() {
 
   return (
     <div className="doctors">
-      <h1 className="doctorsTitle">Our Doctors</h1>
+      <h1 className="doctorsTitle">Our Doctors</h1>         {/* list of doctors*/}
       <div className="doctorsList">
         {DoctorsList.map((doctorsItem, key) => {
           return (

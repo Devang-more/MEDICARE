@@ -6,7 +6,7 @@ function Footer() {
     return(
         <div className="main_footer">
             <div className="container_footer">
-                <div className="row_footer">
+                <div className="row_footer">        {/* footer of every page*/}
                     <div className="col1">
                         <h4>Popular features</h4>
                         <ul>

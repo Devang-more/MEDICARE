@@ -3,16 +3,18 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 require('../db/conn');
+
+{/*importing various schema*/}
 const User = require("../model/userSchema")
 const Patient = require("../model/patientschema")
 const appointmentform=require("../model/appointmentschema")
+
 router.get('/', (req,res) => {
-    res.send("helllo world from router")
+    res.send("hello world from router")
 });
 
+//route for doctor patient
 router.post('/Signup_D', async (req,res) => {
-
-
 
     try{
         const {fname, lname, dob, email, speciality, password, location } = req.body;
@@ -37,7 +39,7 @@ router.post('/Signup_D', async (req,res) => {
         }
 });
 
-//route for patient
+//route for patient signup
 
 router.post('/Signup_P', async (req,res) => {
 

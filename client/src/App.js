@@ -20,7 +20,7 @@ function App() {
       { <Switch>
           <Route path="/loginpage" exact component={LogInPage} />
           <Route path="/doctors" exact component={Doctors} />
-          <Route path="/Signup_D" exact component={Signup_D } />
+          <Route path="/Signup_D" exact component={Signup_D } />          {/*route for different pages */}
           <Route path="/Signup_P" exact component={Signup_P} />
           <Route path="/VideoConsult" exact component={VideoConsult} />
 
